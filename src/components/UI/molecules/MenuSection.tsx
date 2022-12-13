@@ -35,12 +35,14 @@ const MenuSection = (props: Props) => {
 	);
 };
 
-const SubMenuItem = styled.li`
-  list-style: none;
-`
+
 const SubMenuList = styled.ul`
   padding-left: 20px;
   margin: 4px 0 10px 0;
+`
+const SubMenuItem = styled.li`
+  list-style: none;
+  color: grey;
 `
 
 export default MenuSection;
