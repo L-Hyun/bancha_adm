@@ -16,7 +16,7 @@ const MenuSection = (props: Props) => {
   const slideUp = {display: 'none'}
 
 	return (
-		<div>
+		<Wrapper>
 			<MenuButton name={props.menus[0]} idx={props.idx} onClick={() => {setIsOpened(!isOpened)}}/>
 			<SubMenuList style={isOpened ? slideDown : slideUp} >
 				{props.menus.slice(1).map((e, idx) => {
@@ -31,10 +31,13 @@ const MenuSection = (props: Props) => {
 					);
 				})}
 			</SubMenuList>
-		</div>
+		</Wrapper>
 	);
 };
 
+const Wrapper = styled.div`
+  /* margin-bottom: 40px; */
+`
 
 const SubMenuList = styled.ul`
   padding-left: 20px;

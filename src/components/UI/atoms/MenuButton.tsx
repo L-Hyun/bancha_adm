@@ -18,7 +18,8 @@ const Btn = styled.div`
   outline: 0;
   background-color: transparent;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 20px;
+  font-weight: 700;
   
   &:hover {
     color: red;

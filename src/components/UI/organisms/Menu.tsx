@@ -1,7 +1,5 @@
 import React from 'react'
 import styled from 'styled-components';
-import MenuStore from '../../store/MenuStore';
-import UserInfo from '../molecules/UserInfo';
 import MenuSection from '../molecules/MenuSection';
 
 type Props = {
@@ -12,7 +10,6 @@ const Menu = (props: Props) => {
 
   return (
     <MenuContainer>
-      <UserInfo />
       {menus.map((e, idx)=>{
         return <MenuSection menus={e} idx={idx} key={`subMenuSection_${idx}`}/>
       })}
@@ -22,9 +19,9 @@ const Menu = (props: Props) => {
 
 const MenuContainer = styled.div`
   background-color: white;
-  border-radius: 20px;
   padding: 20px;
   width: 200px;
+  height: 100%;
 `
 
 export default Menu

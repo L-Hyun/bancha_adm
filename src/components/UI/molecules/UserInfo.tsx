@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import { useNavigate } from 'react-router-dom'
 import UserStore from '../../store/UserStore'
 import UserName from '../atoms/UserName'
 
@@ -7,9 +8,15 @@ type Props = {
 }
 
 const UserInfo = (props: Props) => {
+  let navigate = useNavigate();
   const user = UserStore();
-  const login = () => {};
-  const logout = () => {};
+  const login = () => {navigate("/login")};
+  const logout = () => {
+    user.setIsLoggedIn(false);
+    user.setToken("");
+    user.setUsername("");
+    user.setUsernumber(-1);
+  };
 
   return (
     <Info onClick={user.isLoggedIn ? logout : login}>
@@ -20,10 +27,8 @@ const UserInfo = (props: Props) => {
 
 const Info = styled.div`
   display: flex;
-  justify-content: space-around;
-  border-bottom: 1px solid #69856b;
-  margin-bottom: 15px;
-  padding-bottom: 15px;
+  align-items: center;
+  height: 50px;
   cursor: pointer;
 
   &:hover {

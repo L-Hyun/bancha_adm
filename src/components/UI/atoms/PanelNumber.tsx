@@ -5,16 +5,18 @@ type Props = {
   num: number
 }
 
-const MainNumber = (props: Props) => {
+const PanelNumber = (props: Props) => {
   return (
     <Number>{props.num}</Number>
   )
 }
 
 const Number = styled.div`
-  font-size: 50px;
+  font-size: 150px;
+  font-weight: 700;
+  padding-bottom: 20px;
   color: grey;
   text-align: center;
 `
 
-export default MainNumber
+export default PanelNumber
