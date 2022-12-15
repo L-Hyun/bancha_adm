@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import MenuStore from "../../store/MenuStore";
-import MenuButton from "../atoms/MenuButton";
+import MenuButton from "../atoms/menu/MenuButton";
 
 type Props = {
 	menus: string[],
@@ -17,11 +17,11 @@ const MenuSection = (props: Props) => {
 
 	return (
 		<Wrapper>
-			<MenuButton name={props.menus[0]} idx={props.idx} onClick={() => {setIsOpened(!isOpened)}}/>
+			<MenuButton padding={false} name={props.menus[0]} idx={props.idx} onClick={() => {setIsOpened(!isOpened)}}/>
 			<SubMenuList style={isOpened ? slideDown : slideUp} >
 				{props.menus.slice(1).map((e, idx) => {
 					return (
-            <SubMenuItem key={`subMenuItem_${idx}_${e}`}><MenuButton
+            <SubMenuItem key={`subMenuItem_${idx}_${e}`}><MenuButton padding={true}
 							name={e}
 							idx={idx + props.idx}
 							onClick={() => {
@@ -40,7 +40,7 @@ const Wrapper = styled.div`
 `
 
 const SubMenuList = styled.ul`
-  padding-left: 20px;
+  padding-left: 0px;
   margin: 4px 0 10px 0;
 `
 const SubMenuItem = styled.li`

@@ -1,18 +1,20 @@
 import React from 'react'
 import styled from 'styled-components'
-import PanelDetailButton from '../atoms/PanelDetailButton'
-import PanelNumber from '../atoms/PanelNumber'
-import PanelTitle from '../atoms/PanelTitle'
+import PanelDetailButton from '../atoms/main/PanelDetailButton'
+import PanelNumber from '../atoms/main/PanelNumber'
+import PanelTitle from '../atoms/main/PanelTitle'
 
 type Props = {
+  width: string
+  height: string
   title: string
   num: number
   link: string
 }
 
-const SquarePanel = (props: Props) => {
+const PanelWithOneNumber = (props: Props) => {
   return (
-    <Wrapper>
+    <Wrapper style={{width: props.width, height: props.height}}>
       <PanelTitle title={props.title} />
       <PanelNumber num={props.num} />
       <PanelDetailButton link={props.link} />
@@ -27,8 +29,6 @@ const Wrapper = styled.section`
   flex-direction: column;
   justify-content: space-between;
   border-radius: 20px;
-  width: 300px;
-  height: 312px;
 `
 
-export default SquarePanel
+export default PanelWithOneNumber

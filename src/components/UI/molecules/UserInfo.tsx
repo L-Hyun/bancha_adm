@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import { useNavigate } from 'react-router-dom'
 import UserStore from '../../store/UserStore'
-import UserName from '../atoms/UserName'
+import UserName from '../atoms/header/UserName'
 
 type Props = {
 }

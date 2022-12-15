@@ -2,14 +2,17 @@ import React from 'react'
 import styled from 'styled-components';
 
 type Props = {
-  name: string;
-  idx: Number;
-  onClick: (idx: Number)=>void;
+  name: string
+  idx: Number
+  onClick: (idx: Number)=>void
+  padding: boolean
 }
 
 const MenuButton = (props: Props) => {
+  const style={paddingLeft: "20px"}
+
   return (
-    <Btn onClick={()=>props.onClick(props.idx)}>{props.name}</Btn>
+    <Btn style={props.padding ? style : {}} onClick={()=>props.onClick(props.idx)}>{props.name}</Btn>
   )
 }
 
@@ -22,7 +25,7 @@ const Btn = styled.div`
   font-weight: 700;
   
   &:hover {
-    color: red;
+    background-color: #eeeeeeee;
   }
 `
 

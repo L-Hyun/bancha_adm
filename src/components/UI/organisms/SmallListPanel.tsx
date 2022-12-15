@@ -1,0 +1,55 @@
+import React from 'react'
+import styled from 'styled-components'
+import PanelDetailButton from '../atoms/main/PanelDetailButton'
+import PanelTitle from '../atoms/main/PanelTitle'
+import SmallListPanelItem from '../molecules/SmallListPanelItem'
+
+type Props = {
+  title: string
+  numDay: number
+  numWeek: number
+  numMonth: number
+  link: string
+}
+
+const ListPanel = (props: Props) => {
+  return (
+    <Wrapper>
+      <PanelTitle title={props.title} />
+      <FlexCol>
+        <SmallListPanelItem text={"일"} num={props.numDay} />
+        <Divider />
+        <SmallListPanelItem text={"주"} num={props.numWeek} />
+        <Divider />
+        <SmallListPanelItem text={"월"} num={props.numMonth} />
+      </FlexCol>
+      <PanelDetailButton link={props.link}/>
+    </Wrapper>
+  )
+}
+
+const Wrapper = styled.section`
+  background-color: white;
+  padding: 12px 20px 16px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 20px;
+  width: 510px;
+  height: 272px;
+`
+
+const FlexCol = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+`
+
+const Divider = styled.div`
+  width: 100%;
+  height: 1px;
+  background-color: grey;
+`
+
+export default ListPanel

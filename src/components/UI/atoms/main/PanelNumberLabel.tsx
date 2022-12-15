@@ -12,9 +12,10 @@ const PanelNumberLabel = (props: Props) => {
 }
 
 const Label = styled.span`
-  font-size: 20px;
+  font-size: 18px;
   text-align: center;
-  margin-bottom: -20px;
+  margin-top: 10px;
+  margin-bottom: -30px;
 `
 
 export default PanelNumberLabel

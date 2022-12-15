@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components';
-import Img from "../../../assets/logo.png";
+import Img from "../../../../assets/logo.png";
 import { Link } from 'react-router-dom';
 
 type Props = {

@@ -20,7 +20,7 @@ const Menu = (props: Props) => {
 const MenuContainer = styled.div`
   background-color: white;
   padding: 20px;
-  width: 200px;
+  width: 260px;
   height: 100%;
 `
 

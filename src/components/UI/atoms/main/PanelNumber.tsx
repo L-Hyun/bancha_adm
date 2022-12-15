@@ -12,7 +12,7 @@ const PanelNumber = (props: Props) => {
 }
 
 const Number = styled.div`
-  font-size: 150px;
+  font-size: 130px;
   font-weight: 700;
   padding-bottom: 20px;
   color: grey;
