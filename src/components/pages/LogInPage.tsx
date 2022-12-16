@@ -1,11 +1,25 @@
 import React from 'react'
+import styled from 'styled-components'
+import LoginPanel from '../UI/organisms/LoginPanel'
 
 type Props = {}
 
-const LogInPage = (props: Props) => {
+const LoginPage = (props: Props) => {
   return (
-    <div>LogInPage</div>
+    <Wrapper>
+      <LoginPanel />
+    </Wrapper>
   )
 }
 
-export default LogInPage
+const Wrapper = styled.article`
+  width: 100%;
+  height: 700px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+`
+
+export default LoginPage

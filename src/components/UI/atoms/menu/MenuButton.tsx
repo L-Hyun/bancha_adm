@@ -1,29 +1,39 @@
 import React from 'react'
 import styled from 'styled-components';
+import MenuStore from '../../../store/MenuStore';
 
 type Props = {
   name: string
-  idx: Number
-  onClick: (idx: Number)=>void
+  idx: string
+  onClick: (idx: string)=>void
   padding: boolean
 }
 
+type styleProps = {
+  padding: boolean
+  selected: boolean
+}
+
 const MenuButton = (props: Props) => {
-  const style={paddingLeft: "20px"}
+  const { selected } = MenuStore();
 
   return (
-    <Btn style={props.padding ? style : {}} onClick={()=>props.onClick(props.idx)}>{props.name}</Btn>
+    <Btn onClick={()=>props.onClick(props.idx)} padding={props.padding} selected={props.idx == selected} >
+      {props.name}
+    </Btn>
   )
 }
 
-const Btn = styled.div`
+const Btn = styled.div<styleProps>`
   border: 0;
   outline: 0;
-  background-color: transparent;
   cursor: pointer;
   font-size: 20px;
   font-weight: 700;
-  
+
+  padding-left: ${props => (props.padding ? '20px' : '0px')};
+  background-color: ${props => (props.selected ? "#eeeeeeee" : "transparent")};
+
   &:hover {
     background-color: #eeeeeeee;
   }

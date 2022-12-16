@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import styled from "styled-components";
 import MenuStore from "../../store/MenuStore";
 import MenuButton from "../atoms/menu/MenuButton";
@@ -9,25 +10,34 @@ type Props = {
 };
 
 const MenuSection = (props: Props) => {
-  const {selected, select} = MenuStore();
+  const { select, menus } = MenuStore();
+  const navigate = useNavigate();
   const [isOpened, setIsOpened] = useState(false);
 
   const slideDown = {display: 'block'}
   const slideUp = {display: 'none'}
+  const mmm = (idx: number)=>{
+    let temp = props.idx.toString() + idx.toString();
+    select(temp);
+    navigate(menus[temp]);
+  }
 
 	return (
 		<Wrapper>
-			<MenuButton padding={false} name={props.menus[0]} idx={props.idx} onClick={() => {setIsOpened(!isOpened)}}/>
+			<MenuButton padding={false} name={props.menus[0]} idx={"0"} onClick={() => {setIsOpened(!isOpened)}} />
 			<SubMenuList style={isOpened ? slideDown : slideUp} >
 				{props.menus.slice(1).map((e, idx) => {
 					return (
-            <SubMenuItem key={`subMenuItem_${idx}_${e}`}><MenuButton padding={true}
-							name={e}
-							idx={idx + props.idx}
-							onClick={() => {
-								select(idx + props.idx);
-							}}
-						/></SubMenuItem>
+            <SubMenuItem key={`subMenuItem_${idx}_${e}`}>
+              <MenuButton
+                padding={true}
+                name={e}
+                idx={props.idx.toString() + idx.toString()}
+                onClick={() => {
+                  mmm(idx);
+                }}
+              />
+            </SubMenuItem>
 					);
 				})}
 			</SubMenuList>

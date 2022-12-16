@@ -15,3 +15,13 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+button {
+  font-family: 'Noto Sans KR', sans-serif;
+  background-color: transparent;
+  border: 0;
+}
+
+input {
+  font-family: 'Noto Sans KR', sans-serif;
+}

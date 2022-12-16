@@ -1,7 +1,8 @@
 import React from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import styled from 'styled-components'
-import LogInPage from '../pages/LogInPage'
+import ItemListPage from '../pages/ItemListPage'
+import LoginPage from '../pages/LoginPage'
 import MainPage from '../pages/MainPage'
 import Header from '../UI/organisms/Header'
 import Menu from '../UI/organisms/Menu'
@@ -16,7 +17,8 @@ function RootRouter({}: Props) {
         <Menu />
         <Routes>
           <Route path="/" element={<MainPage />} />
-          <Route path="/login" element={<LogInPage />} />
+          <Route path="/login" element={<LoginPage />} />
+          <Route path="/item" element={<ItemListPage />} />
         </Routes>
       </Layout>
     </BrowserRouter>

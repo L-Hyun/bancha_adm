@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
-import PanelDetailButton from '../atoms/main/PanelDetailButton'
-import PanelTitle from '../atoms/main/PanelTitle'
+import PanelDetailButton from '../atoms/panel/PanelDetailButton'
+import PanelTitle from '../atoms/panel/PanelTitle'
 import SmallListPanelItem from '../molecules/SmallListPanelItem'
 
 type Props = {
@@ -35,7 +35,7 @@ const Wrapper = styled.section`
   flex-direction: column;
   justify-content: space-between;
   border-radius: 20px;
-  width: 510px;
+  width: 30%;
   height: 272px;
 `
 

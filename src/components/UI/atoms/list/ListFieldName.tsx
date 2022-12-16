@@ -6,7 +6,7 @@ type Props = {
   width: string
 }
 
-const ListPanelFieldName = (props: Props) => {
+const ListFieldName = (props: Props) => {
   return (
     <Text style={{width: props.width}}>{props.text}</Text>
   )
@@ -17,4 +17,4 @@ const Text = styled.div`
   color: grey;
 `
 
-export default ListPanelFieldName
+export default ListFieldName

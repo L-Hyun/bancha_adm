@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
-import SmallListPanelNumber from '../atoms/main/SmallListPanelNumber'
-import ListPanelFieldName from '../atoms/main/ListPanelFieldName'
+import SmallListPanelNumber from '../atoms/panel/SmallListPanelNumber'
+import ListFieldName from '../atoms/list/ListFieldName'
 
 type Props = {
   text: string
@@ -11,7 +11,7 @@ type Props = {
 const SmallListPanelItem = (props: Props) => {
   return (
     <ListItem>
-      <ListPanelFieldName width={"auto"} text={props.text} />
+      <ListFieldName width={"auto"} text={props.text} />
       <SmallListPanelNumber num={props.num} />
     </ListItem>
   )

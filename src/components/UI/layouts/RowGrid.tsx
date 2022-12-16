@@ -14,7 +14,7 @@ const RowGrid = (props: Props) => {
 const ScreenLayout = styled.article`
   padding: 20px 10px 20px 20px;
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 20px;
   overflow-y: scroll;
@@ -32,7 +32,6 @@ const ScreenLayout = styled.article`
     background-color: transparent;
     border-radius: 10px;  
   }
-
 `
 
 export default RowGrid
