@@ -1,8 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
-import PanelDetailButton from '../atoms/panel/PanelDetailButton'
-import PanelNumber from '../atoms/panel/PanelNumber'
-import PanelTitle from '../atoms/panel/PanelTitle'
+import PanelDetailButton from '../../atoms/panel/PanelDetailButton'
+import PanelNumber from '../../atoms/panel/PanelNumber'
+import PanelTitle from '../../atoms/panel/PanelTitle'
 
 type Props = {
   width: string

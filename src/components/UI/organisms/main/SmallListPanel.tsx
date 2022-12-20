@@ -1,8 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
-import PanelDetailButton from '../atoms/panel/PanelDetailButton'
-import PanelTitle from '../atoms/panel/PanelTitle'
-import SmallListPanelItem from '../molecules/SmallListPanelItem'
+import PanelDetailButton from '../../atoms/panel/PanelDetailButton'
+import PanelTitle from '../../atoms/panel/PanelTitle'
+import SmallListPanelItem from '../../molecules/panel/SmallListPanelItem'
 
 type Props = {
   title: string

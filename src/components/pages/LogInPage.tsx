@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import LoginPanel from '../UI/organisms/LoginPanel'
+import LoginPanel from '../UI/organisms/common/LoginPanel'
 
 type Props = {}
 
@@ -13,7 +13,7 @@ const LoginPage = (props: Props) => {
 }
 
 const Wrapper = styled.article`
-  width: 100%;
+  width: 90%;
   height: 700px;
 
   display: flex;

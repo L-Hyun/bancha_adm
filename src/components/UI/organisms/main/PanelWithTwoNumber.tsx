@@ -1,9 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
-import PanelDetailButton from '../atoms/panel/PanelDetailButton'
-import PanelNumber from '../atoms/panel/PanelNumber'
-import PanelNumberLabel from '../atoms/panel/PanelNumberLabel'
-import PanelTitle from '../atoms/panel/PanelTitle'
+import PanelDetailButton from '../../atoms/panel/PanelDetailButton'
+import PanelTitle from '../../atoms/panel/PanelTitle'
+import PanelNumberWithLabel from '../../molecules/panel/PanelNumberWithLabel'
 
 type Props = {
   width: string
@@ -19,15 +18,9 @@ const PanelWithTwoNumber = (props: Props) => {
     <Wrapper style={{width: props.width, height: props.height}}>
       <PanelTitle title={props.title}/>
       <FlexRow>
-        <FlexColumn>
-          <PanelNumberLabel label={"일반"} />
-          <PanelNumber num={props.num1} />
-        </FlexColumn>
+        <PanelNumberWithLabel label={"일반"} num={props.num1} />
         <Divider />
-        <FlexColumn>
-          <PanelNumberLabel label={"파트너"} />
-          <PanelNumber num={props.num2} />
-        </FlexColumn>
+        <PanelNumberWithLabel label={"파트너"} num={props.num2} />
       </FlexRow>
       <PanelDetailButton link={props.link} />
     </Wrapper>
@@ -46,11 +39,6 @@ const Wrapper = styled.section`
 const FlexRow = styled.div`
   display: flex;
   justify-content: space-around;
-`
-
-const FlexColumn = styled.div`
-  display: flex;
-  flex-direction: column;
 `
 
 const Divider = styled.div`

@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components';
-import MenuSection from '../molecules/MenuSection';
+import MenuSection from '../../molecules/MenuSection';
 
 type Props = {
 }
@@ -20,7 +20,7 @@ const Menu = (props: Props) => {
 const MenuContainer = styled.div`
   background-color: white;
   padding: 20px;
-  width: 260px;
+  width: 10%;
   height: 100%;
 `
 

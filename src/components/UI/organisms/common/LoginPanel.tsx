@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import styled from 'styled-components'
-import LoginButton from '../atoms/login/LoginButton'
-import LoginInput from '../atoms/login/LoginInput'
+import LoginButton from '../../atoms/login/LoginButton'
+import LoginInput from '../../atoms/login/LoginInput'
 
 type Props = {}
 

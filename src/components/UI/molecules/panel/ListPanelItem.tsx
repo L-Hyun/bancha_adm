@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import ListItemValue from '../atoms/list/ListItemValue'
+import ListItemValue from '../../atoms/list/ListItemValue'
 
 type Props = {
   title: string

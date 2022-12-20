@@ -14,10 +14,11 @@ const RowGrid = (props: Props) => {
 const ScreenLayout = styled.article`
   padding: 20px 10px 20px 20px;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   flex-wrap: wrap;
   gap: 20px;
   overflow-y: scroll;
+  width: 90%;
   
   &::-webkit-scrollbar {
     width: 10px;

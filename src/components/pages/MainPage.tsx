@@ -1,10 +1,10 @@
 import React from 'react'
 import styled from 'styled-components'
 import RowGrid from '../UI/layouts/RowGrid'
-import SmallListPanel from '../UI/organisms/SmallListPanel'
-import PanelWithTwoNumber from '../UI/organisms/PanelWithTwoNumber'
-import PanelWithOneNumber from '../UI/organisms/PanelWithOneNumber'
-import LargeListPanel from '../UI/organisms/LargeListPanel'
+import SmallListPanel from '../UI/organisms/main/SmallListPanel'
+import PanelWithTwoNumber from '../UI/organisms/main/PanelWithTwoNumber'
+import PanelWithOneNumber from '../UI/organisms/main/PanelWithOneNumber'
+import LargeListPanel from '../UI/organisms/main/LargeListPanel'
 
 type Props = {}
 
