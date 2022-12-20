@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/bancha_adm/static/css/main.6cf41ae7.css",
+    "main.js": "/bancha_adm/static/js/main.5eb78de3.js",
+    "static/js/787.2626e9b3.chunk.js": "/bancha_adm/static/js/787.2626e9b3.chunk.js",
+    "static/media/logo.png": "/bancha_adm/static/media/logo.66f394eaaf3246abe263.png",
+    "index.html": "/bancha_adm/index.html",
+    "main.6cf41ae7.css.map": "/bancha_adm/static/css/main.6cf41ae7.css.map",
+    "main.5eb78de3.js.map": "/bancha_adm/static/js/main.5eb78de3.js.map",
+    "787.2626e9b3.chunk.js.map": "/bancha_adm/static/js/787.2626e9b3.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6cf41ae7.css",
+    "static/js/main.5eb78de3.js"
+  ]
+}
