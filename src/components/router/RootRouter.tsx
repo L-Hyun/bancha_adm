@@ -5,6 +5,7 @@ import CategoryPage from '../pages/CategoryPage'
 import ItemListPage from '../pages/ItemListPage'
 import LoginPage from '../pages/LoginPage'
 import MainPage from '../pages/MainPage'
+import MemberPage from '../pages/MemberPage'
 import Header from '../UI/organisms/common/Header'
 import Menu from '../UI/organisms/common/Menu'
 
@@ -21,6 +22,7 @@ function RootRouter({}: Props) {
           <Route path="/login" element={<LoginPage />} />
           <Route path="/item" element={<ItemListPage />} />
           <Route path="/category" element={<CategoryPage />} />
+          <Route path="/member" element={<MemberPage />} />
         </Routes>
       </Layout>
     </BrowserRouter>
