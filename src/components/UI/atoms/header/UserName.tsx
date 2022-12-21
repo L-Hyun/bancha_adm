@@ -13,9 +13,10 @@ const UserName = (props: Props) => {
 
 const Text = styled.div`
   text-align: center;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 900;
   width: 160px;
+  color: white;
 `
 
 export default UserName

@@ -5,15 +5,17 @@ type Props = {
   title: string
 }
 
-const PanelTitle = (props: Props) => {
+const PageTitle = (props: Props) => {
   return (
     <Title>{props.title}</Title>
   )
 }
 
 const Title = styled.div`
+  height: 50px;
+  line-height: 50px;
   font-size: 22px;
-  font-weight: 700;
+  margin-left: 20px;
 `
 
-export default PanelTitle
+export default PageTitle

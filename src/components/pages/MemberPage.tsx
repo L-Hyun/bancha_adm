@@ -1,24 +1,23 @@
 import React from 'react'
-import styled from 'styled-components'
+import PageWrapper from '../UI/layouts/PageWrapper'
 import ListSearch from '../UI/organisms/common/ListSearch'
 import MemberList from '../UI/organisms/member/MemberList'
+import MemberPanel from '../UI/organisms/member/MemberPanel'
 
 type Props = {}
 
 const MemberPage = (props: Props) => {
   const filters = ["회원코드", "계정", "성명", "연락처", "상태"]
+  const search = ()=>{};
+  const add=()=>{};
 
   return (
-    <Wrapper>
-      <ListSearch filters={filters} />
+    <PageWrapper title={"일반 회원"} add={add}>
+      <MemberPanel />
+      <ListSearch filters={filters} search={search} />
       <MemberList />
-    </Wrapper>
+    </PageWrapper>
   )
 }
-
-const Wrapper = styled.article`
-  width: 90%;
-  padding: 20px 20px 20px;
-`
 
 export default MemberPage

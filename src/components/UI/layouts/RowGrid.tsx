@@ -19,6 +19,7 @@ const ScreenLayout = styled.article`
   gap: 20px;
   overflow-y: scroll;
   width: 90%;
+  height: 100%;
   
   &::-webkit-scrollbar {
     width: 10px;

@@ -17,10 +17,10 @@ type style = {
 const ListPanelItem = (props: Props) => {
   return (
     <Wrapper border={props.border}>
-      <ListItemValue val={props.title} border={false} width={"40%"} />
-      <ListItemValue val={props.date} border={true} width={"20%"} />
-      <ListItemValue val={props.qty} border={true} width={"20%"} />
-      <ListItemValue val={props.price} border={true} width={"20%"} />
+      <ListItemValue val={props.title} width={"40%"} />
+      <ListItemValue val={props.date} width={"20%"} />
+      <ListItemValue val={props.qty} width={"20%"} />
+      <ListItemValue val={props.price} width={"20%"} />
     </Wrapper>
   )
 }
@@ -28,7 +28,6 @@ const ListPanelItem = (props: Props) => {
 const Wrapper = styled.div<style>`
   display: flex;
   align-items: center;
-  height: 70px;
   border-top: ${props=>(props.border ? "1px solid grey" : "")};
 `
 

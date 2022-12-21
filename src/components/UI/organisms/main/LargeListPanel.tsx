@@ -24,13 +24,25 @@ function LargeListPanel(props: Props) {
         <ListPanelItem title={"제목"} date={"2022-12-15"} qty={"1"} price={"20,000원"} border={true} />
         <ListPanelItem title={"제목"} date={"2022-12-15"} qty={"1"} price={"20,000원"} border={true} />
         <ListPanelItem title={"제목"} date={"2022-12-15"} qty={"1"} price={"20,000원"} border={true} />
+        <ListPanelItem title={"제목"} date={"2022-12-15"} qty={"1"} price={"20,000원"} border={true} />
+        <ListPanelItem title={"제목"} date={"2022-12-15"} qty={"1"} price={"20,000원"} border={true} />
+        <ListPanelItem title={"제목"} date={"2022-12-15"} qty={"1"} price={"20,000원"} border={true} />
+        <ListPanelItem title={"제목"} date={"2022-12-15"} qty={"1"} price={"20,000원"} border={true} />
+        <ListPanelItem title={"제목"} date={"2022-12-15"} qty={"1"} price={"20,000원"} border={true} />
+        <ListPanelItem title={"제목"} date={"2022-12-15"} qty={"1"} price={"20,000원"} border={true} />
+        <ListPanelItem title={"제목"} date={"2022-12-15"} qty={"1"} price={"20,000원"} border={true} />
+        <ListPanelItem title={"제목"} date={"2022-12-15"} qty={"1"} price={"20,000원"} border={true} />
+        <ListPanelItem title={"제목"} date={"2022-12-15"} qty={"1"} price={"20,000원"} border={true} />
+        <ListPanelItem title={"제목"} date={"2022-12-15"} qty={"1"} price={"20,000원"} border={true} />
+        <ListPanelItem title={"제목"} date={"2022-12-15"} qty={"1"} price={"20,000원"} border={true} />
+        <ListPanelItem title={"제목"} date={"2022-12-15"} qty={"1"} price={"20,000원"} border={true} />
       </FlexCol>
       <PanelDetailButton link={props.link} />
     </Wrapper>
   )
 }
 
-const Wrapper = styled.div`
+const Wrapper = styled.section`
   background-color: white;
   padding: 12px 20px 16px 20px;
   display: flex;
@@ -38,13 +50,18 @@ const Wrapper = styled.div`
   justify-content: space-between;
   border-radius: 20px;
   width: 70%;
-  height: 602px;
+  height: 522px;
 `
 
 const FlexCol = styled.div`
   display: flex;
   flex-direction: column;
   height: 500px;
+  overflow-y: scroll;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
 `
 
 export default LargeListPanel

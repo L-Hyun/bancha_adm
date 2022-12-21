@@ -13,7 +13,7 @@ const ListFieldName = (props: Props) => {
 }
 
 const Text = styled.div`
-  font-size: 20px;
+  font-size: 16px;
   color: grey;
 `
 

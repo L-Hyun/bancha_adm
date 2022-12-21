@@ -5,7 +5,7 @@ import ListFieldName from '../../atoms/list/ListFieldName'
 
 type Props = {
   text: string
-  num: number
+  num: string
 }
 
 const SmallListPanelItem = (props: Props) => {
@@ -18,7 +18,7 @@ const SmallListPanelItem = (props: Props) => {
 }
 
 const ListItem = styled.div`
-  height: 70px;
+  height: 50px;
   display: flex;
   justify-content: space-between;
   align-items: center;

@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 
 type Props = {
-  num: number
+  num: string
 }
 
 const PanelNumber = (props: Props) => {
@@ -12,7 +12,7 @@ const PanelNumber = (props: Props) => {
 }
 
 const Number = styled.div`
-  font-size: 130px;
+  font-size: 80px;
   font-weight: 500;
   color: grey;
   text-align: center;

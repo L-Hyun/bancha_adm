@@ -18,7 +18,7 @@ const Btn = styled.div`
   text-align: right;
   text-decoration: underline;
   color: grey;
-  font-size: 16px;
+  font-size: 14px;
 
   &:hover {
     color: black;

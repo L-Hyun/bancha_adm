@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 
 type Props = {
-  num: number
+  num: string
 }
 
 const SmallListPanelNumber = (props: Props) => {
@@ -12,7 +12,7 @@ const SmallListPanelNumber = (props: Props) => {
 }
 
 const Number = styled.span`
-  font-size: 20px;
+  font-size: 18px;
 `
 
 export default SmallListPanelNumber
