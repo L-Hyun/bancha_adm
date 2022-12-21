@@ -6,9 +6,9 @@ import SmallListPanelItem from '../../molecules/panel/SmallListPanelItem'
 
 type Props = {
   title: string
-  numDay: number
-  numWeek: number
-  numMonth: number
+  numDay: string
+  numWeek: string
+  numMonth: string
   link: string
 }
 
@@ -36,7 +36,7 @@ const Wrapper = styled.section`
   justify-content: space-between;
   border-radius: 20px;
   width: 30%;
-  height: 272px;
+  height: 30%;
 `
 
 const FlexCol = styled.div`

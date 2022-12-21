@@ -5,7 +5,7 @@ import PanelNumberLabel from '../../atoms/panel/PanelNumberLabel'
 
 type Props = {
   label: string
-  num: number
+  num: string
 }
 
 const PanelNumberWithLabel = (props: Props) => {

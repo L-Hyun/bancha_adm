@@ -3,28 +3,25 @@ import styled from 'styled-components'
 
 type Props = {
   val: string
-  border: boolean
   width: string
 }
 
 type style = {
   width: string
-  border: boolean
 }
 
 const ListItemValue = (props: Props) => {
   return (
-    <Text width={props.width} border={props.border} >{props.val}</Text>
+    <Text width={props.width} >{props.val}</Text>
   )
 }
 
 const Text = styled.div<style>`
-  font-size: 20px;
+  font-size: 16px;
   text-align: center;
-  border-left: ${props=>(props.border ? "1px solid #ccc" : "0")};
-
   width: ${props=>props.width};
-
+  height: 50px;
+  line-height: 50px;
 `
 
 export default ListItemValue

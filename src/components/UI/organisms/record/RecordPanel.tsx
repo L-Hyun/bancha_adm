@@ -4,13 +4,12 @@ import PanelNumberWithLabel from '../../molecules/panel/PanelNumberWithLabel'
 
 type Props = {}
 
-const ItemPanel = (props: Props) => {
+const RecordPanel = (props: Props) => {
   return (
     <Wrapper>
-      <PanelNumberWithLabel label={"신규 상품"} num={"0"} />
-      <PanelNumberWithLabel label={"판매 중"} num={"0"} />
-      <PanelNumberWithLabel label={"일반 상품"} num={"0"} />
-      <PanelNumberWithLabel label={"반차 상품"} num={"0"} />
+      <PanelNumberWithLabel label={"예약 건수"} num={"0"} />
+      <PanelNumberWithLabel label={"확정 대기"} num={"0"} />
+      <PanelNumberWithLabel label={"예약 취소"} num={"0"} />
     </Wrapper>
   )
 }
@@ -25,4 +24,4 @@ const Wrapper = styled.section`
   border-radius: 20px;
 `
 
-export default ItemPanel
+export default RecordPanel

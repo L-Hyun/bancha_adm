@@ -1,7 +1,7 @@
 import React from 'react'
-import styled from 'styled-components'
 import ListItemSoldOut from '../../atoms/list/ListItemSoldOut'
 import ListItemValue from '../../atoms/list/ListItemValue'
+import ListItemWrapper from '../../layouts/ListItemWrapper'
 
 type Props = {
   title: string
@@ -22,26 +22,17 @@ type style = {
 
 const ItemListItem = (props: Props) => {
   return (
-    <Wrapper border={props.border}>
-      <ListItemValue val={props.id} border={false} width={"11%"} />
-      <ListItemValue val={props.title} border={true} width={"22%"} />
-      <ListItemValue val={props.price} border={true} width={"11%"} />
-      <ListItemValue val={props.partner} border={true} width={"11%"} />
-      <ListItemValue val={props.manager} border={true} width={"11%"} />
-      <ListItemValue val={props.sales} border={true} width={"11%"} />
-      <ListItemValue val={props.views} border={true} width={"11%"} />
+    <ListItemWrapper border={props.border}>
+      <ListItemValue val={props.id} width={"11%"} />
+      <ListItemValue val={props.title} width={"22%"} />
+      <ListItemValue val={props.price} width={"11%"} />
+      <ListItemValue val={props.partner} width={"11%"} />
+      <ListItemValue val={props.manager} width={"11%"} />
+      <ListItemValue val={props.sales} width={"11%"} />
+      <ListItemValue val={props.views} width={"11%"} />
       <ListItemSoldOut isSelling={props.isSelling} />
-    </Wrapper>
+    </ListItemWrapper>
   )
 }
-//이름, 코드, 품절처리, 누적판매량, 담당자
-
-const Wrapper = styled.div<style>`
-  display: flex;
-  align-items: center;
-  width: 100%;
-  height: 70px;
-  border-top: ${props=>(props.border ? "1px solid grey" : "")};
-`
 
 export default ItemListItem

@@ -8,7 +8,7 @@ type Props = {
   width: string
   height: string
   title: string
-  num: number
+  num: string
   link: string
 }
 

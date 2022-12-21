@@ -20,7 +20,7 @@ const Wrapper = styled.div`
   height: 50px;
   display: flex;
   justify-content: space-between;
-  background-color: white;
+  background-color: grey;
 `
 
 export default Header

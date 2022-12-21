@@ -8,8 +8,8 @@ type Props = {
   width: string
   height: string
   title: string,
-  num1: number,
-  num2: number,
+  num1: string,
+  num2: string,
   link: string
 }
 

@@ -28,7 +28,7 @@ const Btn = styled.div<styleProps>`
   border: 0;
   outline: 0;
   cursor: pointer;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 700;
 
   padding-left: ${props => (props.padding ? '20px' : '0px')};

@@ -17,7 +17,7 @@ const Btn = styled.button`
   cursor: pointer;
   width: 70px;
   height: 50px;
-  background-color: #8ac28d;
+  background-color: grey; /*8ac28d */
   color: white;
   text-align: center;
   border-radius: 10px;

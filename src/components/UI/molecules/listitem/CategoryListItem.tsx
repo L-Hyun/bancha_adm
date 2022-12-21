@@ -1,6 +1,6 @@
 import React from 'react'
-import styled from 'styled-components'
 import ListItemValue from '../../atoms/list/ListItemValue'
+import ListItemWrapper from '../../layouts/ListItemWrapper'
 
 type Props = {
   border: boolean
@@ -10,27 +10,15 @@ type Props = {
   isActive: string
 }
 
-type style = {
-  border: boolean
-}
-
 const CategoryListItem = (props: Props) => {
   return (
-    <Wrapper border={props.border}>
-      <ListItemValue val={props.id} border={false} width={"25%"} />
-      <ListItemValue val={props.name} border={true} width={"30%"} />
-      <ListItemValue val={props.items} border={true} width={"25%"} />
-      <ListItemValue val={props.isActive} border={true} width={"20%"} />
-    </Wrapper>
+    <ListItemWrapper border={props.border}>
+      <ListItemValue val={props.id} width={"20%"} />
+      <ListItemValue val={props.name} width={"40%"} />
+      <ListItemValue val={props.items} width={"25%"} />
+      <ListItemValue val={props.isActive} width={"15%"} />
+    </ListItemWrapper>
   )
 }
-
-const Wrapper = styled.div<style>`
-  display: flex;
-  align-items: center;
-  width: 100%;
-  height: 70px;
-  border-top: ${props=>(props.border ? "1px solid grey" : "")};
-`
 
 export default CategoryListItem
