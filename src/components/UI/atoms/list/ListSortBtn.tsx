@@ -3,6 +3,7 @@ import styled from 'styled-components'
 
 type Props = {
   sort: ()=>{}
+  text: string
   flag: boolean
 }
 
@@ -10,14 +11,16 @@ type Props = {
 
 const ListSortBtn = (props: Props) => {
   return (
-    <Btn onClick={props.sort}>{props.flag ? "▼" : "▲"}</Btn>
+    <Btn onClick={props.sort}>{props.text} {props.flag ? "▼" : "▲"}</Btn>
   )
 }
 
 const Btn = styled.button`
-  width: 100px;
-  height: 30px;
   font-size: 16px;
+
+  &:hover {
+    text-decoration: underline;
+  }
 `
 
 export default ListSortBtn
