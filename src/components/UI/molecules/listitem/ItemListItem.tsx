@@ -22,7 +22,7 @@ type style = {
 
 const ItemListItem = (props: Props) => {
   return (
-    <ListItemWrapper border={props.border}>
+    <ListItemWrapper to={`${props.id}`} border={props.border}>
       <ListItemValue val={props.id} width={"11%"} />
       <ListItemValue val={props.title} width={"22%"} />
       <ListItemValue val={props.price} width={"11%"} />

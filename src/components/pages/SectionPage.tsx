@@ -11,7 +11,7 @@ const SectionPage = (props: Props) => {
   const add=()=>{};
 
   return (
-    <PageWrapper title={"섹션"} add={add}>
+    <PageWrapper title={"섹션"} add={add} btn={true} >
       <ListSearch filters={filters} search={search} />
       <ExhibitionList />
     </PageWrapper>

@@ -12,7 +12,7 @@ const PartnerPage = (props: Props) => {
   const add=()=>{};
 
   return (
-    <PageWrapper title={"공급자"} add={add} >
+    <PageWrapper title={"공급자"} add={add} btn={true} >
       <PartnerPanel />
       <PartnerSearch filters={filters} search={search}/>
       <PartnerList />

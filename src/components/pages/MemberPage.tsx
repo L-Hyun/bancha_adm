@@ -12,7 +12,7 @@ const MemberPage = (props: Props) => {
   const add=()=>{};
 
   return (
-    <PageWrapper title={"일반 회원"} add={add}>
+    <PageWrapper title={"일반 회원"} add={add} btn={true} >
       <MemberPanel />
       <MemberSearch filters={filters} search={search} />
       <MemberList />

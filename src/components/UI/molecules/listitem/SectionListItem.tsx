@@ -13,7 +13,7 @@ type Props = {
 
 const SectionListItem = (props: Props) => {
   return (
-    <ListItemWrapper border={props.border}>
+    <ListItemWrapper to={`${props.id}`} border={props.border}>
       <ListItemValue val={props.id} width={"15%"} />
       <ListItemValue val={props.type} width={"30%"} />
       <ListItemValue val={props.name} width={"20%"} />

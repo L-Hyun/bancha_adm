@@ -6,12 +6,13 @@ type Props = {
   children: ReactNode
   title: string
   add: () => void
+  btn: boolean
 }
 
 const PageWrapper = (props: Props) => {
   return (
     <Page>
-      <PageHeader title={props.title} add={props.add} />
+      <PageHeader title={props.title} add={props.add} btn={props.btn}/>
       <Wrapper>{props.children}</Wrapper>
     </Page>
   )

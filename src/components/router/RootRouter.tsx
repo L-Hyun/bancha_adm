@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import styled from 'styled-components'
 import CategoryPage from '../pages/CategoryPage'
 import ExhibitionPage from '../pages/ExhibitionPage'
+import ItemDetailPage from '../pages/ItemDetailPage'
 import ItemListPage from '../pages/ItemListPage'
 import LoginPage from '../pages/LoginPage'
 import MainPage from '../pages/MainPage'
@@ -24,6 +25,7 @@ function RootRouter({}: Props) {
         <Routes>
           <Route path="/bancha_adm" element={<MainPage />} />
           <Route path="/login" element={<LoginPage />} />
+  
           <Route path="/item" element={<ItemListPage />} />
           <Route path="/category" element={<CategoryPage />} />
           <Route path="/member" element={<MemberPage />} />
@@ -31,6 +33,8 @@ function RootRouter({}: Props) {
           <Route path="/record" element={<RecordPage />} />
           <Route path="/exhibition" element={<ExhibitionPage />} />
           <Route path="/section" element={<SectionPage />} />
+
+          <Route path="/item/:itemId" element={<ItemDetailPage />} />
         </Routes>
       </Layout>
     </BrowserRouter>
