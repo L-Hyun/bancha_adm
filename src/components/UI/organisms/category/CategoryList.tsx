@@ -18,7 +18,7 @@ const CategoryList = (props: Props) => {
 const FlexCol = styled.section`
   background-color: white;
   border-radius: 20px;
-  height: 800px;
+  height: 700px;
   overflow-y: scroll;
   
   &::-webkit-scrollbar {

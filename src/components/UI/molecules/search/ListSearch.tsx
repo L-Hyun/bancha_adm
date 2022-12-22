@@ -17,7 +17,8 @@ const ListSearch = (props: Props) => {
     <Search onKeyDown={(e)=>{ if (e.key == "Enter") {
       e.preventDefault();
       props.search();
-    } }} >
+      }}}
+    >
       <SearchFilter filters={props.filters} selected={filter} setSelected={setFilter} />
       <SearchInput val={query} setVal={setQuery} />
       <SearchButton onClick={props.search} />

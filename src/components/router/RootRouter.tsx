@@ -2,12 +2,14 @@ import React from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import styled from 'styled-components'
 import CategoryPage from '../pages/CategoryPage'
+import ExhibitionPage from '../pages/ExhibitionPage'
 import ItemListPage from '../pages/ItemListPage'
 import LoginPage from '../pages/LoginPage'
 import MainPage from '../pages/MainPage'
 import MemberPage from '../pages/MemberPage'
 import PartnerPage from '../pages/PartnerPage'
 import RecordPage from '../pages/RecordPage'
+import SectionPage from '../pages/SectionPage'
 import Header from '../UI/organisms/common/Header'
 import Menu from '../UI/organisms/common/Menu'
 
@@ -27,6 +29,8 @@ function RootRouter({}: Props) {
           <Route path="/member" element={<MemberPage />} />
           <Route path="/partner" element={<PartnerPage />} />
           <Route path="/record" element={<RecordPage />} />
+          <Route path="/exhibition" element={<ExhibitionPage />} />
+          <Route path="/section" element={<SectionPage />} />
         </Routes>
       </Layout>
     </BrowserRouter>

@@ -22,7 +22,7 @@ const MemberPanel = (props: Props) => {
 const Wrapper = styled.section`
   width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   background-color: white;
   margin-bottom: 20px;
@@ -41,9 +41,9 @@ const Div = styled.div`
 
 const FlexRow = styled.div`
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  width: 70%;
+  width: 60%;
 `
 
 export default MemberPanel

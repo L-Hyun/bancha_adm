@@ -1,21 +1,21 @@
 import React from 'react'
 import PageWrapper from '../UI/layouts/PageWrapper'
 import ListSearch from '../UI/molecules/search/ListSearch'
-import CategoryList from '../UI/organisms/category/CategoryList'
+import ExhibitionList from '../UI/organisms/exhibition/ExhibitionList'
 
 type Props = {}
 
-const CategoryPage = (props: Props) => {
+const ExhibitionPage = (props: Props) => {
   let filters = ["코드", "카테고리명", "활성화"];
   const search = ()=>{};
   const add=()=>{};
 
   return (
-    <PageWrapper title={"카테고리"} add={add} >
-      <ListSearch filters={filters} search={search}/>
-      <CategoryList />
+    <PageWrapper title={"기획전"} add={add}>
+      <ListSearch filters={filters} search={search} />
+      <ExhibitionList />
     </PageWrapper>
   )
 }
 
-export default CategoryPage
+export default ExhibitionPage

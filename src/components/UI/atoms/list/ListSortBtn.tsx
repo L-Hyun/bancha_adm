@@ -2,21 +2,24 @@ import React from 'react'
 import styled from 'styled-components'
 
 type Props = {
-  sort: ()=>{}
+  sort: (idx: number)=>void
   text: string
   flag: boolean
+  idx: number
 }
 
 //▲  ▼
 
 const ListSortBtn = (props: Props) => {
   return (
-    <Btn onClick={props.sort}>{props.text} {props.flag ? "▼" : "▲"}</Btn>
+    <Btn onClick={()=>props.sort(props.idx)}>{props.text} {props.flag ? "▼" : "▲"}</Btn>
   )
 }
 
 const Btn = styled.button`
   font-size: 16px;
+  color: grey;
+  margin-left: 10px;
 
   &:hover {
     text-decoration: underline;

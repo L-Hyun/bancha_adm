@@ -1,8 +1,8 @@
 import React from 'react'
 import ItemList from '../UI/organisms/item/ItemList'
 import ItemPanel from '../UI/organisms/item/ItemPanel'
-import ListSearch from '../UI/organisms/common/ListSearch'
 import PageWrapper from '../UI/layouts/PageWrapper'
+import ItemSearch from '../UI/organisms/item/ItemSearch'
 
 type Props = {}
 
@@ -14,7 +14,7 @@ const ItemListPage = (props: Props) => {
   return (
     <PageWrapper title={"상품 관리"} add={add} >
       <ItemPanel />
-      <ListSearch filters={filters} search={search}/>
+      <ItemSearch filters={filters} search={search}/>
       <ItemList />
     </PageWrapper>
   )
