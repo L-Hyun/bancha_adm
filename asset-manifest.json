@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/bancha_adm/static/css/main.f3f5fc8d.css",
-    "main.js": "/bancha_adm/static/js/main.14e354c4.js",
+    "main.js": "/bancha_adm/static/js/main.1acb7ca6.js",
     "static/js/787.2626e9b3.chunk.js": "/bancha_adm/static/js/787.2626e9b3.chunk.js",
     "static/media/logo.png": "/bancha_adm/static/media/logo.fba5745664bc6cc130c7.png",
     "index.html": "/bancha_adm/index.html",
     "main.f3f5fc8d.css.map": "/bancha_adm/static/css/main.f3f5fc8d.css.map",
-    "main.14e354c4.js.map": "/bancha_adm/static/js/main.14e354c4.js.map",
+    "main.1acb7ca6.js.map": "/bancha_adm/static/js/main.1acb7ca6.js.map",
     "787.2626e9b3.chunk.js.map": "/bancha_adm/static/js/787.2626e9b3.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f3f5fc8d.css",
-    "static/js/main.14e354c4.js"
+    "static/js/main.1acb7ca6.js"
   ]
 }
