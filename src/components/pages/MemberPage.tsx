@@ -1,8 +1,8 @@
 import React from 'react'
 import PageWrapper from '../UI/layouts/PageWrapper'
-import ListSearch from '../UI/organisms/common/ListSearch'
 import MemberList from '../UI/organisms/member/MemberList'
 import MemberPanel from '../UI/organisms/member/MemberPanel'
+import MemberSearch from '../UI/organisms/member/MemberSearch'
 
 type Props = {}
 
@@ -14,7 +14,7 @@ const MemberPage = (props: Props) => {
   return (
     <PageWrapper title={"일반 회원"} add={add}>
       <MemberPanel />
-      <ListSearch filters={filters} search={search} />
+      <MemberSearch filters={filters} search={search} />
       <MemberList />
     </PageWrapper>
   )

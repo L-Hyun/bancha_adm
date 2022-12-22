@@ -1,8 +1,8 @@
 import React from 'react'
 import PageWrapper from '../UI/layouts/PageWrapper'
-import ListSearch from '../UI/organisms/common/ListSearch'
 import PartnerList from '../UI/organisms/partner/PartnerList'
 import PartnerPanel from '../UI/organisms/partner/PartnerPanel'
+import PartnerSearch from '../UI/organisms/partner/PartnerSearch'
 
 type Props = {}
 
@@ -14,7 +14,7 @@ const PartnerPage = (props: Props) => {
   return (
     <PageWrapper title={"공급자"} add={add} >
       <PartnerPanel />
-      <ListSearch filters={filters} search={search}/>
+      <PartnerSearch filters={filters} search={search}/>
       <PartnerList />
     </PageWrapper>
   )

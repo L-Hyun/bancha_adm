@@ -1,6 +1,6 @@
 import React from 'react'
 import PageWrapper from '../UI/layouts/PageWrapper'
-import ListSearch from '../UI/organisms/common/ListSearch'
+import ListSearch from '../UI/molecules/search/ListSearch'
 import RecordList from '../UI/organisms/record/RecordList'
 import RecordPanel from '../UI/organisms/record/RecordPanel'
 
