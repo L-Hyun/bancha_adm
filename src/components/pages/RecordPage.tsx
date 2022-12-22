@@ -12,7 +12,7 @@ const RecordPage = (props: Props) => {
   const add=()=>{};
 
   return (
-    <PageWrapper title={"예약 내역"} add={add} >
+    <PageWrapper title={"예약 내역"} add={add} btn={true} >
       <RecordPanel />
       <ListSearch filters={filters} search={search}/>
       <RecordList />

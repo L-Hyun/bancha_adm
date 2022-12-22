@@ -11,7 +11,7 @@ const ExhibitionPage = (props: Props) => {
   const add=()=>{};
 
   return (
-    <PageWrapper title={"기획전"} add={add}>
+    <PageWrapper title={"기획전"} add={add} btn={true} >
       <ListSearch filters={filters} search={search} />
       <ExhibitionList />
     </PageWrapper>

@@ -1,9 +1,11 @@
 import React, { ReactNode } from 'react'
 import styled from 'styled-components'
+import CustomLink from '../atoms/CustomLink'
 
 type Props = {
   children: ReactNode
   border: boolean
+  to: string
 }
 
 type style = {
@@ -12,6 +14,10 @@ type style = {
 
 const ListItemWrapper = (props: Props) => {
   return (
+    props.border ?
+    <CustomLink to={props.to}>
+      <Wrapper border={props.border}>{props.children}</Wrapper>
+    </CustomLink> : 
     <Wrapper border={props.border}>{props.children}</Wrapper>
   )
 }

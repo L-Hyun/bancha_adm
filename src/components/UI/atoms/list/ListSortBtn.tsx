@@ -17,6 +17,7 @@ const ListSortBtn = (props: Props) => {
 }
 
 const Btn = styled.button`
+  cursor: pointer;
   font-size: 16px;
   color: grey;
   margin-left: 10px;

@@ -6,13 +6,14 @@ import ListAddBtn from '../../atoms/list/ListAddBtn'
 type Props = {
   title: string
   add: ()=>void
+  btn: boolean
 }
 
 const PageHeader = (props: Props) => {
   return (
     <Head>
       <PageTitle title={props.title} />
-      <ListAddBtn onClick={props.add} />
+      {props.btn ? <ListAddBtn onClick={props.add} /> : <></>}
     </Head>
   )
 }

@@ -12,7 +12,7 @@ const ItemListPage = (props: Props) => {
   const add=()=>{};
 
   return (
-    <PageWrapper title={"상품 관리"} add={add} >
+    <PageWrapper title={"상품 관리"} add={add} btn={true} >
       <ItemPanel />
       <ItemSearch filters={filters} search={search}/>
       <ItemList />

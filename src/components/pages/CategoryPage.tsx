@@ -11,7 +11,7 @@ const CategoryPage = (props: Props) => {
   const add=()=>{};
 
   return (
-    <PageWrapper title={"카테고리"} add={add} >
+    <PageWrapper title={"카테고리"} add={add} btn={true} >
       <ListSearch filters={filters} search={search}/>
       <CategoryList />
     </PageWrapper>

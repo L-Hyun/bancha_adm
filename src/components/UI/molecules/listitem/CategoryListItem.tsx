@@ -12,7 +12,7 @@ type Props = {
 
 const CategoryListItem = (props: Props) => {
   return (
-    <ListItemWrapper border={props.border}>
+    <ListItemWrapper to={`${props.id}`} border={props.border}>
       <ListItemValue val={props.id} width={"20%"} />
       <ListItemValue val={props.name} width={"40%"} />
       <ListItemValue val={props.items} width={"25%"} />

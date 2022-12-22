@@ -14,7 +14,7 @@ type Props = {
 
 const ExhibitionListItem = (props: Props) => {
   return (
-    <ListItemWrapper border={props.border}>
+    <ListItemWrapper to={`${props.id}`} border={props.border}>
       <ListItemValue val={props.id} width={"12.5%"} />
       <ListItemValue val={props.name} width={"37.5%"} />
       <ListItemValue val={props.items} width={"12.5%"} />
