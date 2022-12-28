@@ -30,7 +30,7 @@ const Search = styled.form`
   width: 690px;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 `
 
 export default ListSearch

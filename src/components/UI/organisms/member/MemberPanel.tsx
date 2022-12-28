@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import PannelWrapper from '../../layouts/PannelWrapper'
 import PanelNumberWithLabel from '../../molecules/panel/PanelNumberWithLabel'
 
 type Props = {}
@@ -7,7 +8,7 @@ type Props = {}
 const MemberPanel = (props: Props) => {
   let xx = 102502
   return (
-    <Wrapper>
+    <PannelWrapper>
       <PanelNumberWithLabel label={"회원 수"} num={xx.toLocaleString()} />
       <FlexRow>
         <Div>신규회원</Div>
@@ -15,20 +16,9 @@ const MemberPanel = (props: Props) => {
         <PanelNumberWithLabel label={"월"} num={"2597"} />
         <PanelNumberWithLabel label={"년"} num={"102512"} />
       </FlexRow>
-    </Wrapper>
+    </PannelWrapper>
   )
 }
-
-const Wrapper = styled.section`
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  background-color: white;
-  margin-bottom: 20px;
-  border-radius: 20px;
-  overflow: hidden;
-`
 
 const Div = styled.div`
   background-color: grey;

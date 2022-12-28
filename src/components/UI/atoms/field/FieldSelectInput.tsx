@@ -32,6 +32,7 @@ const Input = styled.select<style>`
   text-align: center;
   line-height: 50px;
   font-size: 18px;
+  border: 1px solid grey;
 `
 
 export default FieldSelectInput

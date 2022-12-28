@@ -21,7 +21,6 @@ const Btn = styled.button`
   color: white;
   text-align: center;
   border-radius: 10px;
-  line-height: 50px;
   font-size: 16px;
 `
 

@@ -10,7 +10,7 @@ const ItemDetailPage = (props: Props) => {
 
   return (
     <PageWrapper title={"상품"} add={()=>{}} btn={false} >
-      <ItemDetail itemId={itemId?.toString()}/>
+      <ItemDetail itemId={itemId || '0'}/>
     </PageWrapper>
   )
 }
