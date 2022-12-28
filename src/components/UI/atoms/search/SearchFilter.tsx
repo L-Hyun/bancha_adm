@@ -26,7 +26,7 @@ const Input = styled.select`
   height: 50px;
   text-align: center;
   line-height: 50px;
-  font-size: 18px;
+  font-size: 16px;
   border-radius: 10px;
 `
 
