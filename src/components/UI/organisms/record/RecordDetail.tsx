@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import styled from 'styled-components'
+import Divider from '../../atoms/field/Divider'
 import FieldDateInput from '../../atoms/field/FieldDateInput'
 import FieldNameWithColor from '../../atoms/field/FieldNameWithColor'
 import FieldSelectInput from '../../atoms/field/FieldSelectInput'
@@ -19,19 +20,19 @@ const RecordDetail = (props: Props) => {
       <FieldRowWithColorLabel name={"예약번호"} text={"1"} width={"100%"}/>
       <Divider />
       <FullWidthRow>
-        <FieldRowWithColorLabel name={"예약자 ID"} text={"ididid"} width={"30%"} />
-        <FieldRowWithColorLabel name={"예약자명"} text={"홍길동"} width={"30%"} />
-        <FieldRowWithColorLabel name={"연락처"} text={"010-1234-5678"} width={"30%"} />
+        <FieldRowWithColorLabel name={"예약자 ID"} text={"ididid"} width={"33%"} />
+        <FieldRowWithColorLabel name={"예약자명"} text={"홍길동"} width={"33%"} />
+        <FieldRowWithColorLabel name={"연락처"} text={"010-1234-5678"} width={"33%"} />
       </FullWidthRow>
       <Divider />
       <FullWidthRow>
-        <FieldRowWithColorLabel name={"결제일"} text={"2022-11-11"} width={"30%"} />
-        <FieldRowWithColorLabel name={"결제방법"} text={"무통장"} width={"30%"} />
-        <FieldRowWithColorLabel name={"결제금액"} text={temp.toLocaleString()} width={"30%"} />
+        <FieldRowWithColorLabel name={"결제일"} text={"2022-11-11"} width={"33%"} />
+        <FieldRowWithColorLabel name={"결제방법"} text={"무통장"} width={"33%"} />
+        <FieldRowWithColorLabel name={"결제금액"} text={temp.toLocaleString()} width={"33%"} />
       </FullWidthRow>
       <FullWidthRow>
-        <FieldRowWithColorLabel name={"예약 인원"} text={"1"} width={"30%"} />
-        <FieldRowWithColorLabel name={"포인트 사용"} text={"200"} width={"30%"} />
+        <FieldRowWithColorLabel name={"예약 인원"} text={"1"} width={"33%"} />
+        <FieldRowWithColorLabel name={"포인트 사용"} text={"200"} width={"33%"} />
         <Dummy />
       </FullWidthRow>
       <Divider />
@@ -56,7 +57,7 @@ const RecordDetail = (props: Props) => {
 const FullWidthRow = styled.div`
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
 `
 
 const Dummy = styled.div`
@@ -66,14 +67,7 @@ const Dummy = styled.div`
 const FlexRow = styled.div`
   display: flex;
   align-items: baseline;
-  width: 30%;
-`
-
-const Divider = styled.div`
-  width: 100%;
-  height: 1px;
-  background-color: #ccc;
-  margin-top: -1px;
+  width: 33%;
 `
 
 export default RecordDetail

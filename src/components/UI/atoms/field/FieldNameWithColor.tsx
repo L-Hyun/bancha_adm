@@ -13,8 +13,8 @@ const FieldNameWithColor = (props: Props) => {
 
 const Div = styled.div`
   width: 130px;
-  height: 70px;
-  line-height: 70px;
+  height: 100px;
+  line-height: 100px;
   text-align: center;
   font-size: 18px;
   background-color: #cccccc;
