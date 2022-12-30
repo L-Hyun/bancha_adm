@@ -13,9 +13,9 @@ const FieldText = (props: Props) => {
 
 const Text = styled.div`
   width: calc(100% - 180px);
-  height: 70px;
-  line-height: 70px;
-  font-size: 18px;
+  height: 100px;
+  line-height: 100px;
+  font-size: 16px;
 `
 
 export default FieldText

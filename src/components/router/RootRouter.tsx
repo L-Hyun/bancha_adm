@@ -7,6 +7,7 @@ import ItemDetailPage from '../pages/ItemDetailPage'
 import ItemListPage from '../pages/ItemListPage'
 import LoginPage from '../pages/LoginPage'
 import MainPage from '../pages/MainPage'
+import MemberDetailPage from '../pages/MemberDetailPage'
 import MemberPage from '../pages/MemberPage'
 import PartnerPage from '../pages/PartnerPage'
 import RecordDetailpage from '../pages/RecordDetailpage'
@@ -37,6 +38,7 @@ function RootRouter({}: Props) {
 
           <Route path="/item/:itemId" element={<ItemDetailPage />} />
           <Route path='/record/:recordId' element={<RecordDetailpage />} />
+          <Route path='/member/:memberId' element={<MemberDetailPage />} />
         </Routes>
       </Layout>
     </BrowserRouter>
