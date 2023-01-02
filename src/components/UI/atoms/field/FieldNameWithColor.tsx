@@ -17,7 +17,7 @@ const Div = styled.div`
   line-height: 100px;
   text-align: center;
   font-size: 18px;
-  background-color: #cccccc;
+  background-color: #ececec;
   margin-right: 30px;
 `
 

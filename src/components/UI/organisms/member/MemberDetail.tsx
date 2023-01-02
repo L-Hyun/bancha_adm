@@ -49,6 +49,16 @@ const MemberDetail = (props: Props) => {
           <FieldRowWithColorLabel name={"가입일"} text={"닉네임"} width={"33%"} />
           <FieldRowWithColorLabelAndBooleanButton active={authPhone} name={"연락처"} button={authPhone ? "인증완료" : "미인증"} text={"010-1234-5678"} width={"33%"} onClick={setAuthPhone}/>
         </FullWidthRow>
+        <FullWidthRow>
+          <FieldRowWithColorLabel name={"리뷰"} text={"2"} width={"33%"} />
+          <FieldRowWithColorLabel name={"구매"} text={"3"} width={"33%"} />
+          <FieldRowWithColorLabel name={"구매 금액"} text={"210000"} width={"33%"} />
+        </FullWidthRow>
+        <FullWidthRow>
+          <FieldRowWithColorLabel name={"최종 로그인"} text={"2022-11-15"} width={"33%"} />
+          <FieldRowWithColorLabel name={"포인트"} text={"30000p"} width={"33%"} />
+          <FieldRowWithColorLabel name={"지역"} text={"세종시 집현동"} width={"33%"} />
+        </FullWidthRow>
       </DetailWrapper>
     </>
   )
@@ -78,12 +88,6 @@ const FieldRow = styled.div`
   display: flex;
   gap: 10%;
   justify-content: space-between;
-`
-
-const FlexRow = styled.div`
-  display: flex;
-  align-items: center;
-  width: 33%;
 `
 
 export default MemberDetail
