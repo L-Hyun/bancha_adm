@@ -5,14 +5,12 @@ import PageHeader from '../organisms/common/PageHeader'
 type Props = {
   children: ReactNode
   title: string
-  add: () => void
-  btn: boolean
 }
 
-const PageWrapper = (props: Props) => {
+const PageWrapperWithoutBtn = (props: Props) => {
   return (
     <Page>
-      <PageHeader title={props.title} add={props.add} btn={props.btn}/>
+      <PageHeader title={props.title} add={()=>{}} btn={false}/>
       <Wrapper>{props.children}</Wrapper>
     </Page>
   )
@@ -34,4 +32,4 @@ const Wrapper = styled.article`
   padding: 20px 20px 20px;
 `
 
-export default PageWrapper
+export default PageWrapperWithoutBtn

@@ -7,7 +7,7 @@ type Props = {
   itemId: string
 }
 
-const ItemDetail = (props: Props) => {
+const ItemAdd = (props: Props) => {
   const [id, setId] = useState(props.itemId);
   const [partner, setPartner] = useState("")
 
@@ -26,4 +26,4 @@ const ItemDetail = (props: Props) => {
   )
 }
 
-export default ItemDetail
+export default ItemAdd

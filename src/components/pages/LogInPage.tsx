@@ -15,6 +15,8 @@ const LoginPage = (props: Props) => {
 const Wrapper = styled.article`
   width: 90%;
   height: 700px;
+  margin-top: 50px;
+  margin-left: calc(10% + 40px);
 
   display: flex;
   flex-direction: column;

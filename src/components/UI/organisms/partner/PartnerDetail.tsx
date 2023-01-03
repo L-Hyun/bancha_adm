@@ -8,10 +8,10 @@ import FieldRowWithColorLabelAndBooleanButton from '../../molecules/field/FieldR
 import FieldTextWithBooleanButton from '../../molecules/field/FieldTextWithBooleanButton'
 
 type Props = {
-  memberId: string
+  partnerId: string
 }
 
-const MemberDetail = (props: Props) => {
+const PartnerDetail = (props: Props) => {
   const [push, setPush] = useState(true);
   const [after9, setAfter9] = useState(true)
   const [sendSms, setSendSms] = useState(true)
@@ -21,10 +21,10 @@ const MemberDetail = (props: Props) => {
 
   return (
     <>
-      <TableTitle nickname={"닉네임"} />
+      <TableTitle nickname={"파트너"} />
       <DetailWrapper>
         <FullWidthRow>
-          <FieldRowWithColorLabel name='회원번호' text={props.memberId} width={'33%'} />
+          <FieldRowWithColorLabel name='회원번호' text={props.partnerId} width={'33%'} />
           <FlexDoubleRow>
             <FieldNameWithColor name='알람동의' />
               <FlexCol>
@@ -46,18 +46,22 @@ const MemberDetail = (props: Props) => {
         </FullWidthRow>
         <FullWidthRow>
           <FieldRowWithColorLabelAndBooleanButton active={authPhone} name={"연락처"} button={authPhone ? "인증완료" : "미인증"} text={"010-1234-5678"} width={"33%"} onClick={setAuthPhone}/>
-          <FieldRowWithColorLabel name={"가입일"} text={"닉네임"} width={"33%"} />
           <FieldRowWithColorLabelAndBooleanButton active={authEmail} name={"이메일"} button={authPhone ? "인증완료" : "미인증"} text={"admin@makerence.com"} width={"33%"} onClick={setAuthEmail}/>
+          <FieldRowWithColorLabel name={"주소"} text={"세종 등"} width={"33%"} />
         </FullWidthRow>
         <FullWidthRow>
+          <FieldRowWithColorLabel name={"사업자등록번호"} text={"2022123001"} width={"33%"} />
+          <FieldRowWithColorLabel name={"계좌"} text={"하나은행 915-910007-51105"} width={"33%"} />
+          <FieldRowWithColorLabel name={"수수료"} text={"10%"} width={"33%"} />
+        </FullWidthRow>
+        <FullWidthRow>
+          <FieldRowWithColorLabel name={"상품"} text={"4"} width={"33%"} />
+          <FieldRowWithColorLabel name={"판매"} text={"3"} width={"33%"} />
           <FieldRowWithColorLabel name={"리뷰"} text={"2"} width={"33%"} />
-          <FieldRowWithColorLabel name={"구매"} text={"3"} width={"33%"} />
-          <FieldRowWithColorLabel name={"구매 금액"} text={"210000"} width={"33%"} />
         </FullWidthRow>
         <FullWidthRow>
-          <FieldRowWithColorLabel name={"최종 로그인"} text={"2022-11-15"} width={"33%"} />
-          <FieldRowWithColorLabel name={"포인트"} text={"30000p"} width={"33%"} />
-          <FieldRowWithColorLabel name={"지역"} text={"세종시 집현동"} width={"33%"} />
+          <FieldRowWithColorLabel name={"가입일"} text={"2022-12-30"} width={"33%"} />
+          <Dummy />
         </FullWidthRow>
       </DetailWrapper>
     </>
@@ -90,4 +94,8 @@ const FieldRow = styled.div`
   justify-content: space-between;
 `
 
-export default MemberDetail
+const Dummy = styled.div`
+  width: 66%;
+`
+
+export default PartnerDetail

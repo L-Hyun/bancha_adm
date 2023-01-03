@@ -4,21 +4,28 @@ import TableTitle from '../../atoms/field/TableTitle'
 import DetailWrapper from '../../layouts/DetailWrapper'
 import FieldRowWithColorLabel from '../../molecules/field/FieldRowWithColorLabel'
 
-type Props = {}
+type Props = {
+  idx: number
+  age: string
+  birth: string
+  sex: string
+  focus: string
+  type: string
+}
 
 const ChildDetail = (props: Props) => {
   return (
     <Wrapper>
-      <TableTitle nickname={"자녀"} />
+      <TableTitle nickname={`자녀 ${props.idx}`} />
       <DetailWrapper>
         <FullWidthRow>
-          <FieldRowWithColorLabel name={"연령대"} text={"10대"} width={"33%"} />
-          <FieldRowWithColorLabel name={"생년월일"} text={"2022-12-30"} width={"33%"} />
-          <FieldRowWithColorLabel name={"성별"} text={"여자"} width={"33%"} />
+          <FieldRowWithColorLabel name={"연령대"} text={props.age} width={"33%"} />
+          <FieldRowWithColorLabel name={"생년월일"} text={props.birth} width={"33%"} />
+          <FieldRowWithColorLabel name={"성별"} text={props.sex} width={"33%"} />
         </FullWidthRow>
         <FullWidthRow>
-          <FieldRowWithColorLabel name={"관심사"} text={"액티비티"} width={"33%"} />
-          <FieldRowWithColorLabel name={"성향"} text={"조용"} width={"33%"} />
+          <FieldRowWithColorLabel name={"관심사"} text={props.focus} width={"33%"} />
+          <FieldRowWithColorLabel name={"성향"} text={props.type} width={"33%"} />
           <Dummy />
         </FullWidthRow>
       </DetailWrapper>

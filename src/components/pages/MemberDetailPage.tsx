@@ -12,7 +12,8 @@ const MemberDetailPage = (props: Props) => {
   return (
     <PageWrapper title={"일반회원"} add={()=>{}} btn={false} >
       <MemberDetail memberId={memberId || '0'} />
-      <ChildDetail />
+      <ChildDetail idx={1} age={"10대"} birth={"2022-12-30"} sex={"남"} focus={"액티비티"} type={"조용"} />
+      <ChildDetail idx={2} age={"10대"} birth={"2022-12-30"} sex={"남"} focus={"액티비티"} type={"조용"} />
     </PageWrapper>
   )
 }

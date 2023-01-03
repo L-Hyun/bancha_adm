@@ -20,6 +20,8 @@ const ScreenLayout = styled.article`
   overflow-y: scroll;
   width: 90%;
   height: 100%;
+  margin-top: 50px;
+  margin-left: calc(10% + 40px);
   
   &::-webkit-scrollbar {
     width: 10px;
